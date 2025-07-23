@@ -3,6 +3,13 @@
 
 @theme {
   --color-Sadha: #f5f8ff;
+  --color-orange:#E95A08;
+  --color-dark1:#000;
+  --color-dark2:#111111;
+  --color-dark3:#00000080;
+
+
+  /* font family */
   --font-inter: "Inter", sans-serif;
   --font-noto: "Noto Serif", serif;
 }
