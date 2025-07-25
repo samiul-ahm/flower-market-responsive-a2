@@ -1,15 +1,1 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-
-@theme {
-  --color-Sadha: #f5f8ff;
-  --color-orange:#E95A08;
-  --color-dark1:#000;
-  --color-dark2:#111111;
-  --color-dark3:#00000080;
-
-
-  /* font family */
-  --font-inter: "Inter", sans-serif;
-  --font-noto: "Noto Serif", serif;
-}

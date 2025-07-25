@@ -3,8 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --font-inter: "Inter", sans-serif;
+        --font-noto: "Noto Serif", serif;
+      }
+    </style>
   </head>
+
   <body class="bg-[#F5F8FF]">
     <header class="max-w-7xl mx-auto">
       <nav
@@ -95,7 +109,7 @@
     <main>
       <!-- Plants section -->
       <section class="max-w-7xl mx-auto">
-        <section class="mx-4 " id="shop">
+        <section class="mx-4" id="shop">
           <h2
             class="text-center text-[#E95A08] text-2xl font-bold font-noto sm:text-5xl"
           >
@@ -110,7 +124,7 @@
           </p>
 
           <!-- plants -->
-          <article 
+          <article
             class="grid grid-cols-2 md:grid-cols-4 gap-x-5 gap-y-8 mb-11 md:mb-52"
           >
             <div class="flex flex-col gap-7 text-center">
@@ -348,24 +362,24 @@
         <img
           src="./assets/news-letter-bg.png"
           alt="news-letter-bg"
-          class="w-full"
+          class="w-[100%]"
         />
         <div
-          class="text-white absolute inset-0 flex flex-col justify-center items-center px-5 mx-atuo"
+          class="text-white absolute inset-0 flex flex-col justify-center items-center w-[100%]"
         >
           <h2
             class="text-center text-[20px] sm:text-[50px] font-bold font-noto mb-3"
           >
             Join the colorful Bunch
           </h2>
-          <section class="flex h-12 justify-center mx-auto">
+          <section class="flex justify-center items-center mx-auto">
             <input
-              type="text"
+              type="email"
               placeholder="Write email"
-              class="bg-white min-w-52 md:min-w-[644px] px-5 py-2 text-[#00000080] text-base font-normal font-inter shrink-1 border-0 grow"
+              class="bg-white  text-[#00000080] font-inter pl-5 py-4 focus:outline-none font-semibold grow md:w-[500px] lg:w-[604px]"
             />
             <button
-              class="bg-[#E95A08] font-semibold px-3 md:px-12 py-2 md:py-5 text-center flex items-center shrink grow"
+              class="bg-[#E95A08] text-white px-3 py-4 lg:px-12 flex items-center grow font-semibold"
             >
               <a href="">Subscribe</a>
             </button>
@@ -373,7 +387,10 @@
         </div>
       </section>
     </main>
-    <footer id="aboutus" class="grid grid-cols-1 gap-8 px-4 md:grid-cols-4 max-w-7xl mx-auto">
+    <footer
+      id="aboutus"
+      class="grid grid-cols-1 gap-8 px-4 md:grid-cols-4 max-w-7xl mx-auto"
+    >
       <div class="flex flex-col gap-4">
         <img
           src="./assets/nav-flower.png"
@@ -394,7 +411,9 @@
         <a href="">FAQ</a>
         <a href="">Contact Us</a>
       </div>
-      <div class="flex flex-col gap-4 md:mb-12 text-[#6B7280] font-normal font-inter">
+      <div
+        class="flex flex-col gap-4 md:mb-12 text-[#6B7280] font-normal font-inter"
+      >
         <a href="">Features</a>
         <a href="">Pricing</a>
         <a href="">Privacy Policy</a>
@@ -402,10 +421,26 @@
         <a href="">Help Center</a>
       </div>
       <div class="flex gap-6 mb-12 sm:mb-0">
-        <img src="./assets/icon-linkedin.png" alt="icon-linkedin" class="w-9 h-9"/>
-        <img src="./assets/icon-twitter.png" alt="icon-twitter" class="w-9 h-9"/>
-        <img src="./assets/icon-facebook.png" alt="icon-facebook" class="w-9 h-9"/>
-        <img src="./assets/icon-youtube.png" alt="icon-youtube" class="w-9 h-9" />
+        <img
+          src="./assets/icon-linkedin.png"
+          alt="icon-linkedin"
+          class="w-9 h-9"
+        />
+        <img
+          src="./assets/icon-twitter.png"
+          alt="icon-twitter"
+          class="w-9 h-9"
+        />
+        <img
+          src="./assets/icon-facebook.png"
+          alt="icon-facebook"
+          class="w-9 h-9"
+        />
+        <img
+          src="./assets/icon-youtube.png"
+          alt="icon-youtube"
+          class="w-9 h-9"
+        />
       </div>
     </footer>
   </body>
